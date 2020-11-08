@@ -39,13 +39,13 @@ class App extends Component {
     return (
       <div>
         <div className="left-scene">
-          <SearchBar searchFunction={this.search} />
+          <Searchbar searchFunction={this.search} />
           <div className="selected-gif">
             <Gif id={this.state.selectedGifId} />
           </div>
         </div>
         <div className="right-scene">
-          <GifList gifs={this.state.gifs} selectGif={this.selectGif} />
+          <Gifs gifs={this.state.gifs} selectGif={this.selectGif} />
         </div>
       </div>
     );
